@@ -4,6 +4,8 @@ Este projeto é um sistema simples de **CRUD de usuários** desenvolvido para at
 A aplicação utiliza o stack **MERN** (MongoDB, Express, React e Node.js) para realizar operações de criação, leitura, atualização e exclusão de usuários.
 
 ---
+### Desenvolvido por João Vitor Borges e Matheus Souza Segatto
+---
 
 ## 🚀 Tecnologias utilizadas
 
