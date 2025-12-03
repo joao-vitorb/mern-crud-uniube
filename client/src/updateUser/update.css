@@ -1,10 +1,12 @@
 .addUser {
   background-color: white;
-  padding: 40px;
-  width: 25%;
-  margin: 50px auto;
-  border-radius: 5px;
-  box-shadow: 1px 1px 8px rgb(0, 0, 0, 0.65);
+  padding: 32px 24px;
+  width: 100%;
+  max-width: 480px;
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.65);
+  box-sizing: border-box;
 }
 
 .addUser .inputGroup {
@@ -14,27 +16,48 @@
 }
 
 .addUserForm .inputGroup label {
-  margin-top: 5px;
-}
-
-.addUserForm .inputGroup input {
-  margin-bottom: 5px;
-  padding: 10px;
-}
-
-.addUserForm .inputGroup button {
   margin-top: 8px;
 }
 
+.addUserForm .inputGroup input {
+  margin-bottom: 8px;
+  padding: 10px;
+  font-size: 0.95rem;
+}
+
+.addUserForm .inputGroup button {
+  margin-top: 12px;
+  width: 100%;
+}
+
 .addUser h3 {
-  margin-top: 30px;
+  margin-top: 24px;
   text-align: center;
   font-weight: bold;
   color: blue;
   text-transform: uppercase;
+  font-size: 1.5rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .addUser i {
   margin-right: 5px;
+}
+
+@media (min-width: 768px) {
+  .addUser {
+    padding: 40px 32px;
+    margin: 60px auto;
+    max-width: 560px;
+  }
+
+  .addUser h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .addUser {
+    max-width: 640px;
+  }
 }

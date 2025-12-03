@@ -1,20 +1,27 @@
 .userTable {
-  width: 60%;
-  margin: 50px auto;
+  width: 90%;
+  max-width: 960px;
+  margin: 40px auto;
   background-color: white;
-  padding: 50px;
+  padding: 32px 24px;
   border-radius: 5px;
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.65);
+  box-sizing: border-box;
+  overflow-x: auto;
 }
 
 .userTable table {
   width: 100%;
   margin-top: 30px;
+  border-collapse: collapse;
+  min-width: 600px;
 }
 
 .userTable table thead th {
   background-color: blue;
   color: white;
+  padding: 10px;
+  text-align: center;
 }
 
 .userTable table tbody td {
@@ -23,11 +30,70 @@
   vertical-align: middle;
 }
 
-.actionButtons button {
-  margin: 0 10px;
+.actionButtons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.actionButtons .btn {
+  white-space: nowrap;
 }
 
 .noData {
   margin-top: 20px;
   text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .userTable {
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px 16px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .userTable table {
+    min-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .actionButtons .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .userTable {
+    padding: 16px 10px;
+    margin: 16px auto;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .userTable table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 0.85rem;
+  }
+
+  .userTable table thead th,
+  .userTable table tbody td {
+    padding: 8px 6px;
+  }
+
+  .noData h3 {
+    font-size: 1rem;
+  }
+
+  .noData p {
+    font-size: 0.9rem;
+  }
 }
