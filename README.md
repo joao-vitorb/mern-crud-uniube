@@ -1,6 +1,6 @@
 # 📘 MERN CRUD – UNIUBE
 
-Este projeto é um sistema simples de **CRUD de usuários** desenvolvido para atender aos requisitos da disciplina de Engenharia de Software.  
+Este projeto é um sistema simples de **CRUD de usuários** desenvolvido para atender aos requisitos da disciplina de Linguagens de Programação para a Internet.  
 A aplicação utiliza o stack **MERN** (MongoDB, Express, React e Node.js) para realizar operações de criação, leitura, atualização e exclusão de usuários.
 
 ---
