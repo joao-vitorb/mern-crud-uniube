@@ -32,14 +32,16 @@ const User = () => {
 
   return (
     <div className="userTable">
+      <h1><i class="fa-solid fa-building"></i> JM Condomínios</h1>
+      <h2>Desenvolvido por João Vitor Borges e Matheus Souza Segatto</h2>
       <Link to="/add" type="button" class="btn btn-primary">
-        Adicionar usuário <i class="fa-solid fa-user-plus"></i>
+        Adicionar morador <i class="fa-solid fa-user-plus"></i>
       </Link>
 
       {users.length=== 0?(
         <div className="noData">
           <h3>Sem dados para mostrar</h3>
-          <p>Adicione novos usuários</p>
+          <p>Adicione novos morador</p>
         </div>
       ):(
         <table className="table table-bordered">

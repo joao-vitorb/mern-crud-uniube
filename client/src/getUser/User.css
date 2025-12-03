@@ -45,6 +45,17 @@
   text-align: center;
 }
 
+.userTable h1 {
+  color:blue;
+  font-size: 1.5rem;
+}
+
+.userTable h2 {
+  color:blue;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
 
 @media (max-width: 768px) {
   .userTable {

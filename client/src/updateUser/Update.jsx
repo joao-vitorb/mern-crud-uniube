@@ -51,7 +51,7 @@ const UpdateUser = () => {
         <i class="fa-solid fa-backward"></i>Voltar
       </Link>
 
-      <h3>Editar usuário</h3>
+      <h3>Editar moradores</h3>
       <form className="addUserForm" onSubmit={submitForm}>
         <div className="inputGroup">
           <label htmlFor="name">Nome:</label>
